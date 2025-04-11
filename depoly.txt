@@ -1,0 +1,66 @@
+Android 및 iOS 앱 배포 과정
+=======================
+eas 계정정보
+name : devatthearound
+pw : @1500Ek90
+=======================
+
+1. **Android App Bundle 생성**
+   - Android Studio 설치
+   - EAS CLI 설치: `npm install -g eas-cli`
+   - EAS 프로젝트 설정: `eas build:configure`
+   - App Bundle 생성: `eas build -p android --profile production`
+
+2. **iOS App Bundle 생성**
+   - EAS CLI 설치: `npm install -g eas-cli`
+   - EAS 프로젝트 설정: `eas build:configure`
+   - App Bundle 생성: `eas build -p ios --profile production`
+
+3. **문제 해결**
+   - 로그인 문제: `eas login`
+   - 네트워크 연결 확인
+
+이 문서는 Android 및 iOS 앱 배포를 위한 기본적인 단계를 포함하고 있습니다. 추가적인 도움이 필요하면 관련 문서를 참조하세요.
+
+**.gitignore 파일 수정**
+   - `.gitignore` 파일에 `android`와 `ios` 폴더를 추가하여 버전 관리에서 제외하세요.
+   ```plaintext
+   /android
+   /ios
+   ```
+
+**Prebuild 모드 사용**
+   - Prebuild 모드를 사용하려면 `expo prebuild` 명령어를 실행하여 네이티브 프로젝트를 생성하세요.
+
+**EAS Build 설정**
+   - EAS Build를 사용할 때는 `app.json`의 네이티브 설정이 `android` 및 `ios` 폴더와 충돌하지 않도록 주의하세요.
+
+**문서 참고**
+   - [Expo Prebuild 문서](https://docs.expo.dev/workflow/prebuild/#usage-with-eas-build)를 참고하여 설정을 확인하세요.
+
+
+
+키스토어 생성 
+
+Appl
+     keytool -genkeypair -v -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -keystore pickup-release-key.jks -alias pickup-key-alias
+Password
+123456
+
+
+
+
+환경 변수 설정:
+터미널에서 다음 명령어를 실행하여 JAVA_HOME을 설정합니다:
+Apply to build.gradle
+Run
+     export JAVA_HOME=/opt/homebrew/opt/openjdk
+     export PATH=$JAVA_HOME/bin:$PATH
+설정 영구화:
+이 설정을 영구적으로 적용하려면 ~/.zshrc 파일에 추가하세요:
+     echo 'export JAVA_HOME=/opt/homebrew/opt/openjdk' >> ~/.zshrc
+     echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.zshrc
+Java가 올바르게 설정되었는지 확인합니다:
+Apply to build.gradle
+Run
+     java -version
