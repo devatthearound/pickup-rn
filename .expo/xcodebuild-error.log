@@ -1,0 +1,6 @@
+2025-04-11 14:17:54.071 xcodebuild[25743:279104] Writing error result bundle to /var/folders/h5/vnj3llws2sq6qyskv7dj6b4w0000gn/T/ResultBundle_2025-11-04_14-17-0054.xcresult
+xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+		{ id:D815F599-2119-479B-9F87-E8DA54FE5AD2 }
+
+	Ineligible destinations for the "app" scheme:
+		{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device, error:iOS 18.2 is not installed. To use with Xcode, first download and install the platform }

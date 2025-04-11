@@ -1,0 +1,6 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/iga-eun/Documents/GitHub/pickup-rn/pickup-app/ios/app.xcworkspace -configuration Debug -scheme app -destination id=D815F599-2119-479B-9F87-E8DA54FE5AD2
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
