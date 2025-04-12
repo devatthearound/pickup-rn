@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.ezpickup.app'
+    namespace 'com.thearound.ezpickup'
     defaultConfig {
-        applicationId 'com.ezpickup.app'
+        applicationId 'com.thearound.ezpickup'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

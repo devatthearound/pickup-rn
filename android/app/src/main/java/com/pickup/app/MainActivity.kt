@@ -1,4 +1,4 @@
-package com.ezpickup.app
+package com.thearound.ezpickup
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

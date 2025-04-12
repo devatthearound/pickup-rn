@@ -38,7 +38,12 @@ pw : @1500Ek90
 **문서 참고**
    - [Expo Prebuild 문서](https://docs.expo.dev/workflow/prebuild/#usage-with-eas-build)를 참고하여 설정을 확인하세요.
 
-
+**코드 수정 시 EAS Update 사용**
+   - 코드 수정 후, EAS CLI를 사용하여 업데이트를 배포합니다:
+     ```bash
+     eas update
+     ```
+   - 앱이 시작될 때마다 업데이트를 자동으로 확인하고 적용합니다.
 
 키스토어 생성 
 

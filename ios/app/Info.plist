@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>myapp</string>
-          <string>com.ezpickup.app</string>
+          <string>com.thearound.ezpickup</string>
         </array>
       </dict>
     </array>
